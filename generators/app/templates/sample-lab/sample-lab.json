@@ -1,0 +1,30 @@
+{
+  "labId": "<%= labId %>",
+  "title": "<%= title %>",
+  "slug": "<%= slug %>",
+  "time": "<%= length %>",
+  "tags": [
+    {"title": "Sample"},
+    {"title": "Data Center"},
+    {"title": "SDN"},
+    {"title": "Mobile"}
+  ],
+  "files": [
+    {"title": "1.md"},
+    {"title": "2.md"}
+  ],
+  "related": [
+    {
+      "labId": "sample-lab-2",
+      "title": "Sample Lab 2 - Sample lab to link to"
+    },
+    {
+      "labId": "sample-lab-3",
+      "title": "Sample Lab 3 - Sample lab to link to"
+    }
+  ],
+  "authors": [
+  	{"name": "<%= author_name %>", "email": "<%= author_email %>"}
+  ],
+  "active": false
+}
