@@ -1,4 +1,4 @@
-# generator-devnet-learninglabs [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-devnet-learninglabs
 > Generator for DevNet Learning Labs
 
 ## Installation
@@ -26,11 +26,3 @@ yo devnet-learninglabs
 ## License
 
 MIT © [Ashley Roach](https://developer.cisco.com)
-
-
-[npm-image]: https://badge.fury.io/js/generator-devnet-learninglabs.svg
-[npm-url]: https://npmjs.org/package/generator-devnet-learninglabs
-[travis-image]: https://travis-ci.org/CiscoDevNet/generator-devnet-learninglabs.svg?branch=master
-[travis-url]: https://travis-ci.org/CiscoDevNet/generator-devnet-learninglabs
-[daviddm-image]: https://david-dm.org/CiscoDevNet/generator-devnet-learninglabs.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/CiscoDevNet/generator-devnet-learninglabs
