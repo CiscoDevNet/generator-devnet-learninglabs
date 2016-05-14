@@ -7,7 +7,7 @@ First, install [Yeoman](http://yeoman.io) and generator-devnet-learninglabs usin
 
 ```bash
 npm install -g yo
-npm install -g generator-devnet-learninglabs
+npm install -g https://github.com/CiscoDevNet/generator-devnet-learninglabs
 ```
 
 Then generate your new project:
