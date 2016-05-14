@@ -2,6 +2,7 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var beautify = require('gulp-beautify');
 
 module.exports = yeoman.Base.extend({
   prompting: function () {
@@ -28,6 +29,11 @@ module.exports = yeoman.Base.extend({
       },
       {
         type: 'input',
+        name: 'tags',
+        message: 'What tags do you want to associate for your lab? (comma separated)'
+      },
+      {
+        type: 'input',
         name: 'length',
         message: 'How long will your learning lab be (in minutes)?',
         default: '30'
@@ -51,18 +57,21 @@ module.exports = yeoman.Base.extend({
   },
 
   writing: function () {
+    var re = /\s*,\s*/;
     var context = {
       title: this.props.title,
       labId: this.props.labId,
       slug: this.props.slug,
       authorName: this.props.author_name,
       authorEmail: this.props.author_email,
-      length: this.props.length
+      length: this.props.length,
+      tags: this.props.tags.split(re)
     };
     this.copy('sample-lab/byod.html', this.props.labId + '/byod.html', context);
     this.template('sample-lab/1.md', this.props.labId + '/1.md', context);
     this.template('sample-lab/2.md', this.props.labId + '/2.md', context);
     this.template('sample-lab/sample-lab.json', this.props.labId + '/' + this.props.labId + '.json', context);
+    this.registerTransformStream(beautify({indentSize: 2 }));
   },
   
   end: function () {

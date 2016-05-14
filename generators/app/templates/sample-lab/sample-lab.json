@@ -4,10 +4,10 @@
   "slug": "<%= slug %>",
   "time": "<%= length %>",
   "tags": [
-    {"title": "Sample"},
-    {"title": "Data Center"},
-    {"title": "SDN"},
-    {"title": "Mobile"}
+    <% tags.forEach(function(el, i, a) { -%>
+    {"title": "<%= el %>"}<% if (i != a.length-1) { -%>,
+    <% } -%>
+    <% }) -%>
   ],
   "files": [
     {"title": "1.md"},

@@ -1,6 +1,6 @@
 {
   "name": "generator-devnet-learninglabs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generator for DevNet Learning Labs",
   "homepage": "",
   "author": {
@@ -17,8 +17,9 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.23.0",
     "chalk": "^1.0.0",
+    "gulp-beautify": "^2.0.0",
+    "yeoman-generator": "^0.23.0",
     "yosay": "^1.0.0"
   },
   "devDependencies": {
