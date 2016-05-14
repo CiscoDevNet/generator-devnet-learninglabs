@@ -24,7 +24,7 @@
     }
   ],
   "authors": [
-  	{"name": "<%= author_name %>", "email": "<%= author_email %>"}
+  	{"name": "<%= authorName %>", "email": "<%= authorEmail %>"}
   ],
   "active": false
 }

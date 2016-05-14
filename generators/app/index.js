@@ -28,11 +28,6 @@ module.exports = yeoman.Base.extend({
       },
       {
         type: 'input',
-        name: 'tags',
-        message: 'What some tags for your lab?'
-      },
-      {
-        type: 'input',
         name: 'length',
         message: 'How long will your learning lab be (in minutes)?',
         default: '30'
@@ -60,9 +55,8 @@ module.exports = yeoman.Base.extend({
       title: this.props.title,
       labId: this.props.labId,
       slug: this.props.slug,
-      tags: this.props.tags,
-      author_name: this.props.author_name,
-      author_email: this.props.author_email,
+      authorName: this.props.author_name,
+      authorEmail: this.props.author_email,
       length: this.props.length
     };
     this.copy('sample-lab/byod.html', this.props.labId + '/byod.html', context);
