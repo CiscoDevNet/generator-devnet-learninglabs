@@ -1,5 +1,5 @@
 # generator-devnet-learninglabs
-> Generator for DevNet Learning Labs
+> Generator for file starting point for DevNet Learning Labs. If you prefer Python, you can use the Cookie Cutter implementation at https://github.com/CiscoDevNet/cookiecutter-devnet-learning-lab. 
 
 ## Installation
 
