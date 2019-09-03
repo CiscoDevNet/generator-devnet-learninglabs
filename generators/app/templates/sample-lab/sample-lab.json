@@ -10,8 +10,10 @@
     <% }) -%>
   ],
   "files": [
-    {"title": "1.md"},
-    {"title": "2.md"}
+    {"file": "1.md",
+     "title": "Title matching 1.md"},
+    {"file": "2.md",
+     "title": "Title matching 2.md"}
   ],
   "related": [
     {
